@@ -1,0 +1,1029 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F415757-78D2-4F19-8C9D-CA950B84ABBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Urist</RootNamespace>
+    <AssemblyName>Urist</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\server\Программы\urist\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\server\Программы\urist\</UpdateUrl>
+    <ApplicationRevision>196</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kisspng-computer-icons-measuring-scales-clip-art-justice-vector-5adab1daaa5477.5540900615242818186977.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>24BB88FD56169584736F88D5BBDE43724FE52CD9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Urist_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\..\..\..\delo\последний делопроизводство_главная\delo\bin\Debug\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TWAIN">
+      <HintPath>..\..\..\..\..\..\Windows\SysWOW64\TWAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="Vintasoft.Twain">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\VintaSoft\VintaSoft Twain .NET v9.1\Examples\CSharp\TwainAdvancedDemo\bin\Vintasoft.Twain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bankrot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bankrot.Designer.cs">
+      <DependentUpon>Bankrot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bankroty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bankroty.Designer.cs">
+      <DependentUpon>Bankroty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlackList.Designer.cs">
+      <DependentUpon>BlackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="byt_vzyskanie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="byt_vzyskanie.Designer.cs">
+      <DependentUpon>byt_vzyskanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.NET\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\CalendarEvent.cs" />
+    <Compile Include="Calendar.NET\CoolButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\CoolButton.Designer.cs" />
+    <Compile Include="Calendar.NET\CustomEvent.cs" />
+    <Compile Include="Calendar.NET\CustomRecurringFunctionAttribute.cs" />
+    <Compile Include="Calendar.NET\EventComparer.cs" />
+    <Compile Include="Calendar.NET\EventDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\EventDetails.Designer.cs" />
+    <Compile Include="Calendar.NET\EventToolTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\EventToolTip.Designer.cs" />
+    <Compile Include="Calendar.NET\HolidayEvent.cs" />
+    <Compile Include="Calendar.NET\IEvent.cs" />
+    <Compile Include="Calendar.NET\NavigateLeftButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\NavigateRightButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\RectangleComparer.cs" />
+    <Compile Include="Calendar.NET\RoundedRectangle.cs" />
+    <Compile Include="Calendar.NET\ScrollPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.NET\ScrollPanel.Designer.cs" />
+    <Compile Include="Calendar.NET\TodayButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomGridLocalizer.cs" />
+    <Compile Include="Deb_delo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deb_delo.Designer.cs">
+      <DependentUpon>Deb_delo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDelo.Designer.cs">
+      <DependentUpon>EditDelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="insert_deb.cs" />
+    <Compile Include="insert_prom.cs" />
+    <Compile Include="Iski.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Iski.Designer.cs">
+      <DependentUpon>Iski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jaloby.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jaloby.Designer.cs">
+      <DependentUpon>Jaloby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main1.Designer.cs">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deb.Designer.cs">
+      <DependentUpon>Deb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main2.Designer.cs">
+      <DependentUpon>Main2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otchet.Designer.cs">
+      <DependentUpon>otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OvalPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PerSbyt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerSbyt.Designer.cs">
+      <DependentUpon>PerSbyt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podrobno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podrobno.Designer.cs">
+      <DependentUpon>Podrobno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pretenzii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pretenzii.Designer.cs">
+      <DependentUpon>pretenzii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="prom_vzyskanie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="prom_vzyskanie.Designer.cs">
+      <DependentUpon>prom_vzyskanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sheduler.Designer.cs">
+      <DependentUpon>Sheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sogl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sogl.Designer.cs">
+      <DependentUpon>sogl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sogl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sogl1.Designer.cs">
+      <DependentUpon>sogl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sud_delo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sud_delo.Designer.cs">
+      <DependentUpon>sud_delo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_po_uristam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_po_uristam.Designer.cs">
+      <DependentUpon>svod_po_uristam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_po_uristam1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_po_uristam1.Designer.cs">
+      <DependentUpon>svod_po_uristam1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_pret_res.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_pret_res.Designer.cs">
+      <DependentUpon>svod_pret_res.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_pret_res1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_pret_res1.Designer.cs">
+      <DependentUpon>svod_pret_res1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_prosr_detProm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_prosr_detProm.Designer.cs">
+      <DependentUpon>svod_prosr_detProm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_res_otpr_prom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_res_otpr_prom.Designer.cs">
+      <DependentUpon>svod_res_otpr_prom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_res_otpr_byt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_res_otpr_byt.Designer.cs">
+      <DependentUpon>svod_res_otpr_byt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_prosr_det.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_prosr_det.Designer.cs">
+      <DependentUpon>svod_prosr_det.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_vzys_res.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_vzys_res.Designer.cs">
+      <DependentUpon>svod_vzys_res.cs</DependentUpon>
+    </Compile>
+    <Compile Include="svod_vzys_res1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="svod_vzys_res1.Designer.cs">
+      <DependentUpon>svod_vzys_res1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twine\GdiPlusLib.cs" />
+    <Compile Include="twine\Global.cs" />
+    <Compile Include="twine\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twine\MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twine\PicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twine\TwainDefs.cs" />
+    <Compile Include="twine\TwainLib.cs" />
+    <Compile Include="uristDataSet1.cs">
+      <DependentUpon>uristDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uristDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uristDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bankrot.resx">
+      <DependentUpon>Bankrot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bankroty.resx">
+      <DependentUpon>Bankroty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlackList.resx">
+      <DependentUpon>BlackList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="byt_vzyskanie.resx">
+      <DependentUpon>byt_vzyskanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.NET\Calendar.resx" />
+    <EmbeddedResource Include="Calendar.NET\CoolButton.resx" />
+    <EmbeddedResource Include="Calendar.NET\EventDetails.resx" />
+    <EmbeddedResource Include="Calendar.NET\EventToolTip.resx" />
+    <EmbeddedResource Include="Calendar.NET\NavigateLeftButton.resx" />
+    <EmbeddedResource Include="Calendar.NET\NavigateRightButton.resx" />
+    <EmbeddedResource Include="Calendar.NET\ScrollPanel.resx" />
+    <EmbeddedResource Include="Calendar.NET\TodayButton.resx" />
+    <EmbeddedResource Include="Deb_delo.resx">
+      <DependentUpon>Deb_delo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDelo.resx">
+      <DependentUpon>EditDelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iski.resx">
+      <DependentUpon>Iski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jaloby.resx">
+      <DependentUpon>Jaloby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main1.resx">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deb.resx">
+      <DependentUpon>Deb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main2.resx">
+      <DependentUpon>Main2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otchet.resx">
+      <DependentUpon>otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerSbyt.resx">
+      <DependentUpon>PerSbyt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podrobno.resx">
+      <DependentUpon>Podrobno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pretenzii.resx">
+      <DependentUpon>pretenzii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prom_vzyskanie.resx">
+      <DependentUpon>prom_vzyskanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sheduler.resx">
+      <DependentUpon>Sheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sogl.resx">
+      <DependentUpon>sogl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sogl1.resx">
+      <DependentUpon>sogl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sud_delo.resx">
+      <DependentUpon>sud_delo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_po_uristam.resx">
+      <DependentUpon>svod_po_uristam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_po_uristam1.resx">
+      <DependentUpon>svod_po_uristam1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_pret_res.resx">
+      <DependentUpon>svod_pret_res.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_pret_res1.resx">
+      <DependentUpon>svod_pret_res1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_prosr_detProm.resx">
+      <DependentUpon>svod_prosr_detProm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_res_otpr_prom.resx">
+      <DependentUpon>svod_res_otpr_prom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_res_otpr_byt.resx">
+      <DependentUpon>svod_res_otpr_byt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_prosr_det.resx">
+      <DependentUpon>svod_prosr_det.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_vzys_res.resx">
+      <DependentUpon>svod_vzys_res.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="svod_vzys_res1.resx">
+      <DependentUpon>svod_vzys_res1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twine\InfoForm.resx" />
+    <EmbeddedResource Include="twine\MainFrame.resx" />
+    <EmbeddedResource Include="twine\PicForm.resx" />
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="uristDataSet1.xsc">
+      <DependentUpon>uristDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="uristDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uristDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uristDataSet1.xss">
+      <DependentUpon>uristDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Urist_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kisspng-computer-icons-measuring-scales-clip-art-justice-vector-5adab1daaa5477.5540900615242818186977.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.BonusSkins.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Charts.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeParser.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v14.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1.Wizard">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGauges.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraWizard.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.RichEdit.v14.1.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraCharts.v14.1.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraCharts.v14.1.Wizard.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.RichEdit.v14.1.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.RichEdit.v14.1.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
